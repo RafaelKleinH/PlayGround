@@ -252,3 +252,67 @@ var filtro = names22.filter({( it: String) -> Bool in
     })
 
 print(filtro)
+
+//--//--//--//-//--//--//-//-//-//-/-/-/-/-/-/-//---//--//-//-//-/-/-/-//-/-/-/-/
+
+var ArrayAleatorio: [Int] = [1,6,8,2,4,8,1,7,8,9,9,9,9,0,0,0,3,3,3,4,4,6,2]
+var numberOfPars: [Int] = []
+var numberOfImpars: [Int] = []
+for number in ArrayAleatorio {
+  
+    let resto = number % 2
+ 
+    print(resto)
+    if resto != 0{
+        
+        numberOfImpars.append(number)
+    }
+    else{
+        
+        numberOfPars.append(number)
+        
+    }
+    
+}
+print(numberOfPars)
+print(numberOfImpars)
+
+
+let ArrayNumbers: [Int] = [6,7,2,0,3,7,5,6,2,7]
+var arrayAnterior: [Int] = []
+var arrayPosterior: [Int] = []
+
+for number in ArrayNumbers{
+    let numAnt:Int = number - 1
+    let numPost:Int = number + 1
+    
+    arrayAnterior.append(numAnt)
+    arrayPosterior.append(numPost)
+    
+}
+
+
+print(ArrayNumbers)
+print(arrayAnterior)
+print(arrayPosterior)
+
+
+func soma(number: Double, secondNumber: Double) -> Double{
+    
+    return number + secondNumber
+}
+func diminuir(number: Double, secondNumber: Double) -> Double{
+    
+    return number - secondNumber
+}
+func divisao(number: Double, secondNumber:Double) -> Double{
+    
+    return number / secondNumber
+}
+func mustiplicacao(number: Double, secondNumber: Double) -> Double{
+    
+    return number * secondNumber
+}
+
+
+
